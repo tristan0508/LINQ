@@ -64,6 +64,22 @@ namespace linq
             double Profit = purchases.Sum();
             Console.WriteLine(Profit);
             
+            List<double> prices = new List<double>()
+            {
+                879.45, 9442.85, 2454.63, 45.65, 2340.29, 34.03, 4786.45, 745.31, 21.76
+            };
+
+            double highestPrice = prices.Max();
+            Console.WriteLine(highestPrice);
+
+            List<int> wheresSquaredo = new List<int>()
+            {
+                66, 12, 8, 27, 82, 34, 7, 50, 19, 46, 81, 23, 30, 4, 68, 14
+            };
+
+            int firstPerfSquare = wheresSquaredo.First(number => Math.Sqrt(number) % 1 == 0);
+            Console.WriteLine(firstPerfSquare);
+
         }
 
 
